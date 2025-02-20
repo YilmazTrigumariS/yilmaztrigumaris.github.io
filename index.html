@@ -10,15 +10,13 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google Fonts-->
+        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox Plugin CSS -->
+        <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core Theme CSS (Bootstrap) -->
+        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Prism.js for Code Styling -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
         <style>
             .profile-img {
                 width: 250px;
@@ -35,22 +33,24 @@
                 overflow: hidden;
                 white-space: nowrap;
             }
-            /* Code Block Styling */
-            .code-container {
-                background-color: #2d2d2d; /* Dark Theme */
-                padding: 15px;
-                border-radius: 8px;
-                width: fit-content;
-                margin: 20px auto;
+            .about-section {
+                background-color: #e6e6e6; /* Softer, calm color */
+                padding: 50px 0;
+                text-align: center;
             }
-            .code-container pre {
-                margin: 0;
-                font-size: 16px;
+            .code-block {
+                background-color: #282c34;
+                color: #61dafb;
+                font-family: 'Courier New', monospace;
+                padding: 15px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 15px;
             }
         </style>
     </head>
     <body id="page-top">
-        <!-- Navigation -->
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -66,28 +66,22 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Masthead -->
+        <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
                         <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-img mx-auto d-block">
-                        <h1 class="text-white font-weight-bold mt-3">Data Science & Analytics Portfolio</h1>
+                        <h1 class="text-white font-weight-bold mt-3">Yilmaz Trigumari Syah Putra</h1>
                         <span class="changing-text" id="changing-role">Data Scientist</span>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <!-- Syntax Highlighted Code Block -->
-                        <div class="code-container">
-                            <pre><code class="language-python">print(f"Specialize in Data Science, Analytics, and Data Visualization, 
-helping businesses derive meaningful insights from data.")</code></pre>
-                        </div>
+                        <div class="code-block">print(f"Specialize in Data Science, Analytics, and Data Visualization, helping businesses derive meaningful insights from data.")</div>
                     </div>
                 </div>
             </div>
         </header>
-
         <script>
             const roles = ["Data Scientist", "Data Analyst", "Data Visualization"];
             let roleIndex = 0;
@@ -98,6 +92,8 @@ helping businesses derive meaningful insights from data.")</code></pre>
             }
             setInterval(changeRole, 2000);
         </script>
+    </body>
+</html>
 
         <!-- About Section -->
         <section class="about-section" id="about">
