@@ -17,220 +17,209 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
         <style>
             /* Global Styles */
-body {
-    font-family: 'Merriweather', serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
+            body {
+                font-family: 'Merriweather', serif;
+                background-color: #f8f9fa;
+                margin: 0;
+                padding: 0;
+            }
 
-/* Navigation Styles */
-#mainNav {
-    background-color: #343a40;
-}
+            /* Navigation Styles */
+            #mainNav {
+                background-color: #343a40;
+            }
+            #mainNav .navbar-nav .nav-link {
+                color: #ffffff;
+                font-weight: bold;
+            }
+            #mainNav .navbar-nav .nav-link:hover {
+                color: #f8f9fa;
+            }
 
-#mainNav .navbar-nav .nav-link {
-    color: #ffffff;
-    font-weight: bold;
-}
+            /* Profile Image */
+            .profile-img {
+                width: 250px;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+                margin: 0 auto;
+            }
 
-#mainNav .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
-}
+            /* Masthead Section */
+            .masthead {
+                background-color: #343a40;
+                color: #fff;
+                padding: 80px 0;
+            }
+            .masthead h1 {
+                font-size: 3rem;
+            }
+            .masthead .changing-text {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #ffffff;
+                height: 30px;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+            }
 
-/* Profile Image */
-.profile-img {
-    width: 250px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
-}
+            /* About Section */
+            .about-section {
+                background-color: #f4f4f4;
+                padding: 80px 20px;
+                text-align: center;
+            }
+            .about-content {
+                background-color: #ffffff;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+                max-width: 800px;
+                margin: 20px auto;
+                text-align: center;
+            }
+            .about-content h2 {
+                font-size: 2rem;
+            }
+            .about-content p {
+                font-size: 1rem;
+                color: #6c757d;
+            }
 
-/* Masthead Section */
-.masthead {
-    background-color: #343a40;
-    color: #fff;
-    padding: 80px 0;
-}
+            /* Resume Section */
+            .resume-section {
+                padding: 60px 0;
+            }
+            .resume-title {
+                margin-top: 30px;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .timeline-item {
+                margin-bottom: 30px;
+            }
+            .timeline-item h4 {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            .timeline-item p,
+            .timeline-item ul {
+                font-size: 1rem;
+                color: #6c757d;
+            }
+            .timeline-item ul li {
+                margin-bottom: 10px;
+            }
+            .vertical-line {
+                width: 1px;
+                height: auto;
+                background-color: #000;
+            }
 
-.masthead h1 {
-    font-size: 3rem;
-}
+            /* Education Sub-list */
+            .timeline-item ul li ul {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
 
-.masthead .changing-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    height: 30px;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-}
+            /* Tools & Technology Section */
+            .tools-section {
+                padding: 60px 0;
+            }
+            .tools-section .tool-icon img {
+                width: 40px;
+                height: 40px;
+            }
+            .tool-label {
+                font-size: 1rem;
+                color: #6c757d;
+            }
 
-/* About Section */
-.about-section {
-    background-color: #f4f4f4;
-    padding: 80px 20px;
-    text-align: center;
-}
+            /* Projects Section */
+            .projects-section {
+                padding: 60px 0;
+            }
+            .projects-section .portfolio-box .project-category {
+                font-size: 0.8rem;
+            }
+            .projects-section .portfolio-box .project-name {
+                font-size: 1rem;
+            }
 
-.about-content {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
+            /* Contact Section */
+            .page-section {
+                padding: 60px 0;
+            }
+            .page-section h2 {
+                font-size: 2rem;
+            }
+            .page-section .text-muted {
+                font-size: 1rem;
+            }
+            #contact .form-floating {
+                margin-bottom: 20px;
+            }
+            #contact .form-control {
+                padding: 20px;
+            }
+            #contact .btn-xl {
+                padding: 10px 30px;
+            }
 
-.about-content h2 {
-    font-size: 2rem;
-}
+            /* Footer Section */
+            footer {
+                background-color: #343a40;
+                color: #ffffff;
+                padding: 30px 0;
+                text-align: center;
+            }
+            footer .small {
+                font-size: 0.8rem;
+            }
 
-.about-content p {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-/* Resume Section */
-.resume-section {
-    padding: 60px 0;
-}
-
-.resume-title {
-    margin-top: 30px;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.timeline-item {
-    margin-bottom: 30px;
-}
-
-.timeline-item h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.timeline-item p,
-.timeline-item ul {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-.timeline-item ul li {
-    margin-bottom: 10px;
-}
-
-.vertical-line {
-    width: 1px;
-    height: auto;
-    background-color: #000;
-}
-
-/* Education Section */
-.timeline-item ul li ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Contact Section */
-.page-section {
-    padding: 60px 0;
-}
-
-.page-section h2 {
-    font-size: 2rem;
-}
-
-.page-section .text-muted {
-    font-size: 1rem;
-}
-
-#contact .form-floating {
-    margin-bottom: 20px;
-}
-
-#contact .form-control {
-    padding: 20px;
-}
-
-#contact .btn-xl {
-    padding: 10px 30px;
-}
-
-/* Footer Section */
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 30px 0;
-    text-align: center;
-}
-
-footer .small {
-    font-size: 0.8rem;
-}
-
-/* Flexbox for better alignment */
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.col-lg-6,
-.col-lg-5 {
-    flex: 1;
-    padding: 20px;
-}
-
-.col-lg-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Center align for elements */
-.text-center {
-    text-align: center;
-}
-
-.container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Utility for consistent margins */
-.mt-5 {
-    margin-top: 3rem;
-}
-
-.mb-5 {
-    margin-bottom: 3rem;
-}
+            /* Utility for consistent margins */
+            .mt-5 {
+                margin-top: 3rem;
+            }
+            .mb-5 {
+                margin-bottom: 3rem;
+            }
         </style>
     </head>
+
     <body id="page-top">
-        
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button
+                    class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tools">Tools & Technology</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
