@@ -17,246 +17,70 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Typed.js Library -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <style>
-            /* Global Styles */
-            body {
-                font-family: 'Merriweather', serif;
-                background-color: #f8f9fa;
-                margin: 0;
-                padding: 0;
-            }
-
-            /* Navigation Styles */
-            #mainNav {
-                background-color: #343a40;
-            }
-            #mainNav .navbar-nav .nav-link {
-                color: #ffffff;
-                font-weight: bold;
-            }
-            #mainNav .navbar-nav .nav-link:hover {
-                color: #f8f9fa;
-            }
-
-            /* Profile Image */
-            .profile-img {
-                width: 250px;
-                height: auto;
-                border-radius: 20px;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-                margin: 0 auto;
-            }
-
-            /* Masthead Section */
-            .masthead {
-                background-color: #343a40;
-                color: #fff;
-                padding: 80px 0;
-            }
-            .masthead h1 {
-                font-size: 3rem;
-            }
-            .masthead .changing-text {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #ffffff;
-                height: 30px;
-                display: inline-block;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-
-            /* About Section */
-            .about-section {
-                background-color: #f4f4f4;
-                padding: 80px 20px;
-                text-align: center;
-            }
-            .about-content {
-                background-color: #ffffff;
-                padding: 40px;
-                border-radius: 10px;
-                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-                max-width: 800px;
-                margin: 20px auto;
-                text-align: center;
-            }
-            .about-content h2 {
-                font-size: 2rem;
-            }
-            .about-content p {
-                font-size: 1rem;
-                color: #6c757d;
-            }
-
-            /* Resume Section */
-            .resume-section {
-                padding: 60px 0;
-            }
-            .resume-title {
-                margin-top: 30px;
-                font-size: 2rem;
-                text-align: center;
-            }
-            .timeline-item {
-                margin-bottom: 30px;
-            }
-            .timeline-item h4 {
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
-            .timeline-item p,
-            .timeline-item ul {
-                font-size: 1rem;
-                color: #6c757d;
-            }
-            .timeline-item ul li {
-                margin-bottom: 10px;
-            }
-            .vertical-line {
-                width: 1px;
-                height: auto;
-                background-color: #000;
-            }
-
-            /* Education Sub-list */
-            .timeline-item ul li ul {
-                list-style-type: disc;
-                margin-left: 20px;
-            }
-
-            /* Tools & Technology Section */
-            .tools-section {
-                padding: 60px 0;
-            }
-            .tools-section .tool-icon img {
-                width: 40px;
-                height: 40px;
-            }
-            .tool-label {
-                font-size: 1rem;
-                color: #6c757d;
-            }
-
-            /* Projects Section */
-            .projects-section {
-                padding: 60px 0;
-            }
-            .projects-section .portfolio-box .project-category {
-                font-size: 0.8rem;
-            }
-            .projects-section .portfolio-box .project-name {
-                font-size: 1rem;
-            }
-
-            /* Contact Section */
-            .page-section {
-                padding: 60px 0;
-            }
-            .page-section h2 {
-                font-size: 2rem;
-            }
-            .page-section .text-muted {
-                font-size: 1rem;
-            }
-            #contact .form-floating {
-                margin-bottom: 20px;
-            }
-            #contact .form-control {
-                padding: 20px;
-            }
-            #contact .btn-xl {
-                padding: 10px 30px;
-            }
-
-            /* Footer Section */
-            footer {
-                background-color: #343a40;
-                color: #ffffff;
-                padding: 30px 0;
-                text-align: center;
-            }
-            footer .small {
-                font-size: 0.8rem;
-            }
-
-            /* Utility for consistent margins */
-            .mt-5 {
-                margin-top: 3rem;
-            }
-            .mb-5 {
-                margin-bottom: 3rem;
-            }
+            body { font-family: 'Merriweather', serif; background-color: #f8f9fa; margin: 0; padding: 0; }
+            #mainNav { background-color: #343a40; }
+            #mainNav .navbar-nav .nav-link { color: #ffffff; font-weight: bold; }
+            #mainNav .navbar-nav .nav-link:hover { color: #f8f9fa; }
+            .profile-img { width: 250px; height: auto; border-radius: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); margin: 0 auto; }
+            .masthead { background-color: #343a40; color: #fff; padding: 80px 0; }
+            .masthead h1 { font-size: 3rem; }
+            .masthead .changing-text { font-size: 1.5rem; font-weight: bold; color: #ffffff; height: 30px; display: inline-block; overflow: hidden; white-space: nowrap; }
+            .about-section { background-color: #f4f4f4; padding: 80px 20px; text-align: center; }
+            .about-content { background-color: #ffffff; padding: 40px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 20px auto; text-align: center; }
+            .about-content h2 { font-size: 2rem; }
+            .about-content p { font-size: 1rem; color: #6c757d; }
+            .resume-section { padding: 60px 0; }
+            .resume-title { margin-top: 30px; font-size: 2rem; text-align: center; }
+            .timeline-item { margin-bottom: 30px; }
+            .timeline-item h4 { font-size: 1.2rem; font-weight: bold; }
+            .timeline-item p, .timeline-item ul { font-size: 1rem; color: #6c757d; }
+            .timeline-item ul li { margin-bottom: 10px; }
+            .vertical-line { width: 1px; height: auto; background-color: #000; }
+            .timeline-item ul li ul { list-style-type: disc; margin-left: 20px; }
+            .tools-section { padding: 60px 0; }
+            .tools-section .tool-icon img { width: 40px; height: 40px; }
+            .tool-label { font-size: 1rem; color: #6c757d; }
+            .projects-section { padding: 60px 0; }
+            .projects-section .portfolio-box .project-category { font-size: 0.8rem; }
+            .projects-section .portfolio-box .project-name { font-size: 1rem; }
+            .page-section { padding: 60px 0; }
+            .page-section h2 { font-size: 2rem; }
+            .page-section .text-muted { font-size: 1rem; }
+            #contact .form-floating { margin-bottom: 20px; }
+            #contact .form-control { padding: 20px; }
+            #contact .btn-xl { padding: 10px 30px; }
+            footer { background-color: #343a40; color: #ffffff; padding: 30px 0; text-align: center; }
+            footer .small { font-size: 0.8rem; }
+            .mt-5 { margin-top: 3rem; }
+            .mb-5 { margin-bottom: 3rem; }
         </style>
     </head>
-
     <body id="page-top">
-
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <button
-                    class="navbar-toggler navbar-toggler-right"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive"
-                    aria-controls="navbarResponsive"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tools">Tools & Technology</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Masthead-->
+        <!-- Navigation and Masthead remain the same -->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
                         <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-img mx-auto d-block">
                         <h1 class="text-white font-weight-bold mt-3">Yilmaz Trigumari Syah Putra</h1>
-                        <span class="changing-text" id="changing-role">Data Scientist</span>
+                        <span class="changing-text" id="changing-role"></span>
                         <hr class="divider" />
                     </div>
                 </div>
             </div>
         </header>
         <script>
-            const roles = ["Data Scientist", "Data Analyst", "Data Visualization"];
-            let roleIndex = 0;
-            
-            function changeRole() {
-                document.getElementById("changing-role").textContent = roles[roleIndex];
-                roleIndex = (roleIndex + 1) % roles.length;
-            }
-            setInterval(changeRole, 2000);
+            const typed = new Typed("#changing-role", {
+              strings: ["Data Scientist", "Data Analyst", "Data Visualization"],
+              typeSpeed: 50,
+              backSpeed: 30,
+              loop: true
+            });
         </script>
-       <!-- About Section -->
-        <section class="about-section" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="about-content">
-                    <h2 class="text-dark">About Me</h2>
-                    <hr class="divider" />
-                    <p class="text-muted"><strong>Hello, Data Enthusiasts!</strong> I'm Yilmaz, and here are some things about me.</p>
-                    <p class="text-muted">I majored in <strong>Metallurgical Engineering</strong> with a <strong>GPA of 3.51</strong>. Currently switching career as a <strong>Data Scientist</strong>, driven by the impact and advancement of the technology and AI Industry.</p>
-                    <p class="text-muted">My expertise in <strong>SQL, Tableau, Looker, Statistics,</strong> and <strong>Machine Learning</strong>, combined with my work experience and analytical thinking, allows me to extract information from a data to help solve modern problems and make strategic business decisions.</p>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
 
       <!-- Resume Section -->
 <section class="resume-section" id="resume">
